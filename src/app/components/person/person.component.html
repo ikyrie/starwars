@@ -1,5 +1,5 @@
 <div>
     <p>{{person.name}}</p>
     <p>{{person.gender}}</p>
-    <p><a *ngFor="let movie of person.films" routerLink="/movie">{{movie}}</a></p>
+    <p><a *ngFor="let movie of person.films" [routerLink]="['/movie', movie]">{{movie}}</a></p>
 </div>
