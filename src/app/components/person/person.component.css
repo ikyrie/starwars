@@ -13,10 +13,13 @@
 }
 
 .person__gender {
+    padding: 0 1rem;
     justify-self: center;
 }
 
 .person__films {
+    display: flex;
+    flex-wrap: wrap;
     justify-self: flex-end;
 }
 
