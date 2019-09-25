@@ -8,12 +8,12 @@ import people from '../../models/people.json';
 })
 export class PeopleComponent implements OnInit {
   people:any[];
-  films:any[];
 
   constructor() { }
 
   ngOnInit() {
-    this.people = people.results;
+    this.people = people.results.sort((a, b) => {
+      return b.films.length - a.films.length;
+    });
   }
-
 }
