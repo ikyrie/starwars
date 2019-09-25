@@ -1,0 +1,23 @@
+.movie {
+    font-size: 1.23rem;
+    color: #fff;
+}
+
+.movie a {
+    display: block;
+    background-color: #292929;
+    transition: .10s;
+}
+
+.movie a:hover {
+    background-color: #444444;
+    transition: .10s;
+}
+
+.movie p, .movie a {
+    padding: 1.2rem 1rem;
+}
+
+.movie p {
+    background-color: #383838;
+}

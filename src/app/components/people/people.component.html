@@ -1,1 +1,8 @@
-<app-person *ngFor="let person of people" [person]="person"></app-person>
+<div class="people">
+    <div class="people__header">
+        <p>Name</p>
+        <p>Gender</p>
+        <p>Films Acted</p>
+    </div>
+    <app-person *ngFor="let person of people" [person]="person"></app-person>
+</div>

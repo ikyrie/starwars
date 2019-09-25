@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open-Sans', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}

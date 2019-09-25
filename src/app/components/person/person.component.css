@@ -1,0 +1,33 @@
+.person {
+    font-size: 1.23rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: .5rem;
+    padding: .7rem 1rem;
+    transition: .10s;
+}
+
+.person:hover {
+    background-color: #e7e7e7;
+    transition: .15s;
+}
+
+.person__gender {
+    justify-self: center;
+}
+
+.person__films {
+    justify-self: flex-end;
+}
+
+.person__films--film {
+    padding: .5rem;
+    margin-left: .3rem;
+    border-radius: 8px;
+    transition: .10s;
+}
+
+.person__films--film:hover {
+    background-color: #677de0;
+    transition: .25s;
+}
