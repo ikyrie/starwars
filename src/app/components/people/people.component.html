@@ -1,4 +1,9 @@
 <div class="people">
+    <select (change)="onChange($event.target.value)">
+        <option value="films">Films</option>
+        <option value="name">Name</option>
+        <option value="gender">Gender</option>
+    </select>
     <div class="people__header">
         <p>Name</p>
         <p>Gender</p>

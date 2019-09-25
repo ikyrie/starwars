@@ -12,11 +12,39 @@ export class PeopleComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.people = people.results.sort((a, b) => {
+    this.people = this.filterByFilms();
+  }
+
+  filterByFilms() {
+    return people.results.sort((a, b) => {
       if(b.films.length === a.films.length) {
         return a.name !== b.name ? a.name < b.name ? -1 : 1 : 0
       }
       return b.films.length - a.films.length;
     });
+  }
+
+  filterByName() {
+    return people.results.sort((a, b) => {
+      return a.name !== b.name ? a.name < b.name ? -1 : 1 : 0
+    })
+  }
+
+  filterByGender() {
+    return people.results.sort((a, b) => {
+      return a.gender !== b.gender ? a.gender < b.gender ? -1 : 1 : 0
+    })
+  }
+
+  onChange(filterSelect:string) {
+    if(filterSelect === 'films') {
+      this.people = this.filterByFilms();
+    }
+    if(filterSelect === 'name') {
+      this.people = this.filterByName();
+    }
+    if(filterSelect === 'gender') {
+      this.people = this.filterByGender();
+    }
   }
 }
