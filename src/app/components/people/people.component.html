@@ -1,5 +1,7 @@
 <div class="people">
-    <select (change)="onChange($event.target.value)">
+    <h1 class="people__title">STAR WARS MOVIES</h1>
+    <h2 class="people__filter-text">Filter by:</h2>
+    <select (change)="onChange($event.target.value)" class="people__filter-select">
         <option value="films">Films</option>
         <option value="name">Name</option>
         <option value="gender">Gender</option>
