@@ -4,24 +4,20 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Antes de iniciar o projeto em desenvolvimento dê `sudo npm install` na raiz do projeto para que todas as dependências possam ser instaladas e depois rode o comando `ng serve --open` e depois de alguns segundos uma aba nova no navegador deve abrir com o projeto.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Caso queira rodar a versão "final" do projeto instale o `http-server` através do `npm` e também rode o comando para gerar a build do projeto:
 
-## Running unit tests
+```sh
+sudo npm install -g http-server
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ng build
+```
 
-## Running end-to-end tests
+Depois vá para a pasta dist/movies e rode o comando `http-server start`. O terminal deve avisar qual porta que o servidor foi aberto. Aí é só abrir o navegador e colocar a url `localhost:<numero-da-porta>`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## After notes
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Eu só comecei a fazer o projeto efetivamente na terça (24/09/2019). Final de semana era impossível de tocar no projeto e segunda eu usei o tempo para "aprender" Angular (a última vez que usei Angular foi em junho de 2017). Depois de entender melhor o Angular e depois de ter feito o projeto, acredito que poderia ter feito em um final de tarde. Muitos dos problemas que tive com o Angular foram porque eu sabia o conceito, mas eu não sabia como executar no Angular. Eu aprendi muuuita coisa com esse projeto e fico feliz de ter escolhido uma linguagem que não estava mais acostumado a usar, assim não fiquei preso apenas no que eu já sabia e também me mostrou o quanto eu consigo aprender em 3 dias usando apenas as horas vagas do dia.
